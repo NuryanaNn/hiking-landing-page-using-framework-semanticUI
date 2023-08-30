@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 10000px;
+    width: 100%;
+}
+
+
+.navbar{
+    padding: 1rem 5%;
+}
+
+ .ui.menu{
+    margin: 0;
+}
+
+.navbar img{
+    width: 100px;
+}
+
+.navIcon{
+    display: flex;
+}
+
+.hero .card{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero .card .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.hero .heroText{
+    width: 600px;
+    text-align: center;
+    z-index: 10;
+    color: #fff;
+}
+
+.hero .card{
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+
+.hero .card1{
+    background-image: url(slider1.jpg);
+}
+
+.hero .card2{
+    background-image: url(slider2.jpg);
+}
+
+.hero .card3{
+    background-image: url(slider3.jpg);
+}
+
+.hero .card4{
+    background-image: url(slider4.jpg);
+}
+
+.hero .heroText h3{
+    font-size: 30px;
+}
+
+.hero .heroText h1{
+    font-size: 50px;
+}
+
+.hero .heroText p{
+    font-size: 15px;
+}
+
+/* About */
+.about{
+    background-color: #333333;
+    padding: 2rem 10%;
+    color: #fff;
+}
+.about .images{
+    position: relative;
+    max-width: 450px;
+    height: 200px;
+}
+
+.about .images img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.about .images .text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.about h1{
+    font-size: 40px;
+}
+
+.about p{
+    color: #7C7E81;
+}
+
+.aboutsContent{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category, .product{
+    padding: 1.5rem 5%;
+}
+
+.category .title{
+    text-align: center;
+}
+
+.categoryContent{
+    margin-top: 30px;
+}
+
+.testimony{
+    padding: 7rem 7%;
+}
+
+.testimonyContent{
+    background-color: #C3E1FB;
+    text-align: center;
+    color: #fff;
+    padding: 7rem 0;
+    position: relative;
+    z-index: 100;
+}
+
+.testimonyContent::before{
+    content:'';
+    position: absolute;
+    bottom: -20px;
+    left: 10px;
+    background-color: #379CF4;
+    width: 100%;
+    height: 100%;
+}
+
+/* Product */
+.product .title{
+    text-align: center;
+}
+
+.productContent{
+    margin-top: 30px;
+}
+
+.trendingContent{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.trendingContent i{
+    color: gold;
+}
+
+.trendingContent .price{
+    margin-top: 10px;
+}
+
+.trendingContent span:nth-child(1){
+    text-decoration: line-through;
+    font-weight: bold;
+}
+
+.trending .title{
+    text-align: center;
+}
+
+.trendingContent button:nth-child(1){
+    margin-bottom: 10px;
+}
+
+.ourTeam{
+    padding: 4rem 5%;
+}
+
+.ourTeam .title{
+    text-align: center;
+}
+
+.teamContent{
+    margin-top: 30px;
+}
+
+.newslatter{
+    padding: 4rem 10%;
+    text-align: center;
+}
+
+.newslatterContent{
+    background-color: #379CF4;
+    padding: 6rem 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newslatterContent .teks{
+    max-width: 500px;
+}
+
+.newslatterContent h1{
+    font-size: 35px;
+}
+
+.newslatterContent input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 300px;
+}
+
+.newslatterContent button{
+    background-color: #333333;
+    color: #fff;
+    padding: 11px 20px;
+    border: none;
+}
+
+.blog .title{
+    text-align: center;
+}
+
+.blogContent .card{
+    position: relative;
+}
+
+.blogContent .card .cardText{
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    color: #fff;
+}
+
+.blogContent .card .date{
+    display: flex;
+    align-items: center;
+    background-color: #379CF4;
+    padding: 10px;
+}
+
+.blogContent .card .date i{
+    margin-right: 10px;
+}
+
+
+@media (max-width:980px) {
+    .ui[class*="two column"].grid>.column:not(.row), .ui[class*="two column"].grid>.row>.column {
+        width: 100%;
+    }
+}
+
